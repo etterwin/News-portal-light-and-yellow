@@ -55,7 +55,47 @@ a {
 
 .nav-item-link {
   font-size: 18px;
-  color: #a5a5a5; }
+  color: #a5a5a5;
+  position: relative; }
+
+.nav-item-link--active {
+  color: #010300;
+  font-size: 18px; }
+
+.nav-item-link:hover {
+  color: #010300;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out; }
+
+.nav-item-link:not(:hover) {
+  transition: all 0.2s ease-in-out; }
+
+.nav-item-link:before,
+.nav-item-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -25px;
+  background: #010300; }
+
+.nav-item-link:before {
+  left: 0; }
+
+.nav-item-link:after {
+  right: 0;
+  background: #010300;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.nav-item-link:hover:before {
+  background: #010300;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.nav-item-link:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s; }
 
 /*main*/
 .main {
@@ -153,11 +193,72 @@ a {
 
 .news-link-read-more {
   text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
   font-size: 18px;
   font-weight: 600;
   color: #010300;
   display: block;
-  margin: 10px 0; }
+  margin: 10px 0;
+  width: 130px;
+  text-align: center; }
+
+.btn-3 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none; }
+
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.btn-3:before, .btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #010300;
+  transition: all 0.3s ease; }
+
+.btn-3:before {
+  height: 0;
+  width: 2px; }
+
+.btn-3:after {
+  width: 0;
+  height: 2px; }
+
+.btn-3:hover:before {
+  height: 100%; }
+
+.btn-3:hover:after {
+  width: 100%; }
+
+.btn-3 span:before, .btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #010300;
+  transition: all 0.3s ease; }
+
+.btn-3 span:before {
+  width: 2px;
+  height: 0; }
+
+.btn-3 span:after {
+  width: 0;
+  height: 2px; }
+
+.btn-3 span:hover:before {
+  height: 100%; }
+
+.btn-3 span:hover:after {
+  width: 100%; }
 
 .add__container {
   width: 30%;
