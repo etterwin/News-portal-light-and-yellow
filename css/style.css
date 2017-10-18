@@ -429,4 +429,44 @@ a {
   .society-icon {
     margin: 0 7%; } }
 
+@media screen and (max-width: 480px) {
+  .society-icon {
+    width: 60px;
+    margin: 0 5px;
+  }
+
+  .news-wrapper {
+    padding: 20px 30px;
+  }
+
+  .footer-text {
+    padding: 20px 0;
+  }
+
+  .footer-wrapper {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .society-icon:first-child {
+    margin-left: 20px;
+  }
+
+  .society-icon {
+    margin: 0 20px;
+  }
+
+  .header-caption-link,
+  .header-navigation,
+  .header-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .header-navigation {
+    margin: 15px auto 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
