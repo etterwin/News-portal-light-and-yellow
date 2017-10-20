@@ -168,7 +168,11 @@ a {
 .news-caption--big {
   font-size: 28px;
   margin: 15px 0;
+  color: #010300;
   text-transform: uppercase; }
+
+.news-caption {
+  color: #010300; }
 
 .news__trash {
   width: 100%; }
@@ -190,6 +194,9 @@ a {
   font-size: 14px;
   color: #a5a5a5;
   vertical-align: top; }
+
+.news-text {
+  color: #010300; }
 
 .news-link-read-more {
   text-transform: uppercase;
@@ -314,7 +321,8 @@ a {
 .add-text {
   color: #010300;
   padding: 5px 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%; }
 
 .add-link-read-more {
   text-transform: uppercase;
@@ -375,5 +383,51 @@ a {
 
 .society-icon:last-child {
   margin-right: 0; }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .news__container {
+    width: 45%; }
+
+  .society-icon {
+    margin: 0 3%; } }
+@media screen and (max-width: 991px) {
+  .news--big,
+  .add__container,
+  .news__container {
+    width: 95%;
+    display: block;
+    margin: 20px auto; }
+
+  .news-hint {
+    font-size: 24px; }
+
+  .news-caption--big {
+    font-size: 30px; }
+
+  .news-text,
+  .add-text {
+    font-size: 20px; }
+
+  .footer-wrapper {
+    display: block;
+    width: 100%; }
+
+  .footer-text {
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 24px; }
+
+  .society-link {
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 10px auto; }
+
+  .society-icon {
+    margin: 0 7%; } }
 
 /*# sourceMappingURL=style.css.map */
